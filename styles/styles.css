@@ -1,0 +1,114 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #1a1a2e; /* Fondo azul oscuro */
+  }
+
+  h1 {
+    color: white; 
+    text-align: center;
+    font-size: 44px;
+  }
+  
+  .container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+
+  #search-input{
+    width: 60%;
+    border: 1px;
+    border-color: white;
+    border-radius: 2px;
+    box-shadow: 2px 2px 2px 2px rgba(255, 255, 255, 0.46);
+    font-size: 20px;
+  }
+
+  #search-input:focus-visible{
+   outline-style: none;
+  }
+
+  #search-button{
+    width: 20%;
+    border: 1px;
+    color: white;
+    background-image: linear-gradient(to bottom right, #31b67f, #2c5cae);
+    border-color: white;
+    border-radius: 2px;
+    box-shadow: 2px 2px 2px 2px rgba(255, 255, 255, 0.46);
+    font-size: 20px;
+    cursor: pointer;
+  }
+  #search-button:focus-visible{
+    outline-style: none;
+  }
+
+  .pokemons-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    grid-gap: 20px;
+  }
+  
+  .card {
+    border: 1px solid #ddd;
+    padding: 10px;
+    cursor: pointer;
+    background: linear-gradient(to bottom right, #3160b6, #0e1726); /* Color degradado */
+    color: white; /* Texto blanco */
+    text-align: center;
+  }
+  
+  .card h2 {
+    margin-top: 0;
+  }
+  
+  .modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .modal-content {
+    background-color: #fff;
+    padding: 20px;
+    max-width: 400px;
+    margin: 0 auto;
+  }
+  
+  .modal-content h2 {
+    margin-top: 0;
+  }
+  
+  .modal-content p {
+    margin: 0;
+    margin-bottom: 5px;
+  }
+  
+  .modal-content button {
+    margin-top: 10px;
+  }
+  
+  .search-container {
+    margin-bottom: 20px;
+    text-align: center; 
+  }
+  
+  .search-container input {
+    padding: 5px;
+  }
+  
+  .search-container button {
+    padding: 5px 10px;
+    margin-left: 10px;
+  }
+  
+  
+  
